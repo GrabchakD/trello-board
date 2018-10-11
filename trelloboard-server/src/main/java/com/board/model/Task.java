@@ -18,6 +18,8 @@ public class Task {
     private String name;
     @Column(name = "DESCRIPTION")
     private String description;
+    @Column(name = "COLUMN_NAME")
+    private com.board.model.Column columnName;
 
     public Long getId() {
         return id;
@@ -41,5 +43,13 @@ public class Task {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public com.board.model.Column getColumnName() {
+        return columnName;
+    }
+
+    public void setColumnName(com.board.model.Column columnName) {
+        this.columnName = columnName;
     }
 }
