@@ -13,6 +13,6 @@ export class TaskService {
 
   public getAllTask(): Observable<Array<Task>> {
     return this.http.get<Array<Task>>(
-      'http://localhost:8080/categories', {observe: 'body'});
+      'http://localhost:8080/task', {observe: 'body'});
   }
 }
